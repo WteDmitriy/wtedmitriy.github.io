@@ -1,4 +1,4 @@
- <!-- const swiper = new Swiper('.swiper-container', {
+ const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
     slidesPerView: 1,
@@ -20,5 +20,5 @@
       prevEl: '.carousel-button.prev',
     },
 
-  }); -->
+  });
   
