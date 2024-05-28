@@ -1,6 +1,6 @@
 function filterCatalog(filterItemClass) {
     filterItem = document.querySelectorAll('.box');
-    document.querySelector(filterItemClass).addEventListener(('click' || 'touch'), event => {
+    document.querySelector(filterItemClass).addEventListener(('click' || 'touchstart'), event => {
         if (event.target.tagName !== 'OPTION') return false;
 
         let filterClass = event.target.dataset['f'];
