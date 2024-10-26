@@ -1,0 +1,98 @@
+.futer {
+    padding: 10px;
+    background-color: $bg-grey-dark-color;
+    
+
+    .divider {
+        margin: 0    ;
+        height: 2px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    &__subheader {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__menu {
+        margin-top: 10px;        
+    }
+    
+    &__list {
+        margin-top: 10px;
+        ul {
+            list-style-type: none;
+            li {
+                margin-top: 10px;
+                color: $main-light-color;
+                text-transform: uppercase;
+                font-weight: 500;
+                cursor: pointer;
+                
+                a {
+                    display: block;
+                    &:link {
+                        color: $main-light-color;
+                    }
+                    &:visited {
+                        color: $main-light-color;
+                    }
+                    &:hover {
+                        text-decoration: underline;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .phone__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        img {
+            display: block;
+            height: 20px;
+            width: 20px;
+            margin: auto 5px;
+        }
+        
+        .kyivstar:hover {
+            color: $kyivstar-color;
+        }
+
+        .vodafone:hover {
+            color: $vodafone-color;
+        }
+         
+        .lifecell:hover {
+            color: $lifecell-color;
+        }
+    }
+
+    #confident {
+        flex-basis: 80%;
+        text-align: center;
+        margin: 15px auto 0 auto;
+        color: $main-font-color;
+        text-transform: lowercase;
+        font-size: 14px;
+        font-weight: 300;
+        cursor: pointer;
+        
+        a {
+            display: block;
+            &:link {
+                color: $main-font-color;
+            }
+            &:visited {
+                color: $main-font-color;
+            }
+            &:hover {
+                text-decoration: underline;
+                color: #fff;
+            }
+        }
+    }
+}

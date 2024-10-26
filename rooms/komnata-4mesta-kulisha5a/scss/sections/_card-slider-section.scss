@@ -1,0 +1,32 @@
+.card-slider {
+    padding-top: 90px;
+    &__slider {
+        margin: 20px 0 10px 0;
+        display: grid;
+        grid-template-columns: 50px 1fr 50px 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__container{
+        overflow: hidden;
+    }
+
+    &__list {
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+        margin: auto;
+    }
+
+    .divider {
+        margin: 0 auto;
+    }
+}
