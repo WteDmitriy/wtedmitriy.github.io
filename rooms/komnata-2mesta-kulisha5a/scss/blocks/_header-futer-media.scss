@@ -1,0 +1,88 @@
+@media screen and (max-width: $bp-card) {
+    .subheader {
+        grid-template-columns: repeat(4, minmax(100px, 1fr)) 70px 50px;
+       
+        &_call {
+            display: none;
+        }
+        .language {
+            font-size: 14px;
+            margin: 0 5px;
+        }
+        .phone__wrapper {
+            font-size: 16px;;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .subheader {
+        grid-template-columns: 170px 1fr 70px 60px;
+        grid-template-rows: 50px;
+        
+        &__dropbutton {
+            display: block;
+            width: 155px;
+            margin: auto;
+            font-size: 14px;
+
+            .dropbutton__btn {
+                padding: 3px;
+
+                &::after {
+                    top: 15px;
+                }
+            }
+        }
+        .phone__wrapper {
+            display: none;
+        }    
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    header {
+        nav {
+            .menu_active {
+                width: 230px;
+            }
+        }
+        .subheader {
+            grid-template-columns: 45px minmax(155px, 1fr) 70px 50px;
+            
+            &__dropbutton {
+                display: block;
+            }
+            .phone__wrapper {
+                display: none;
+            }
+            &__logo {
+                display: none;
+                &-mini {
+                    display: block;
+                }
+            }
+            .hamburger {
+                right: 10px;
+            }
+        }
+    }
+    
+    .futer {
+        &__menu-contacts {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: $bp-mini) {
+        
+    .subheader {
+        grid-template-columns: 1fr 70px 60px;
+            
+        &__logo-mini {
+        display: none;
+        }
+    }
+    
+} 

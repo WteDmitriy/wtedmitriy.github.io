@@ -1,0 +1,119 @@
+.btn {
+    height: 45px;
+    background: $main-light-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 400; 
+
+    &:hover {
+        background-color: #fff;
+        color: $main-light-color;
+        border: solid 2px;
+        border-color: $main-light-color;
+    }
+}
+.button_mini {
+    width: 135px;
+    height: 32px;
+    background-color: $main-light-color;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        color: $main-light-color;
+        border: solid 2px;
+        border-color: $main-light-color;
+    }
+}
+
+//Кнопка с выпадающим списком
+.dropbutton {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.dropbutton__item  {
+    position: relative;
+}
+.dropbutton__item.dropbutton__item-open .dropdown-menu {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+.dropbutton__item.dropbutton__item-open .dropbutton__btn::after {
+    transform: rotate(-135deg);
+    
+}
+.dropbutton__btn {
+    position: relative;
+    background-color: $main-light-color;
+    border: none;
+    border-radius: 6px;
+    padding: 15px;
+    padding-right: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color .5s;
+    cursor: pointer;
+
+}
+.dropbutton__btn:hover {
+    background-color: #fff;
+    color: $main-light-color;
+    border: solid 2px;
+    border-color: $main-light-color;
+}
+.dropbutton__btn:active {
+    background-color: rgba(0, 0, 0, .2);
+}
+.dropbutton__btn::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border: solid $bg-grey-color;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    right: 9px;
+    top: 23px;
+    transition: transform .5s;
+}
+
+.dropdown-menu {
+    position: absolute;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border-radius: 6px;
+    background-color: $bg-grey-color;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility .5s, opacity .5s, transform .5s;
+}
+
+.dropdown-menu__link {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+}
+.dropdown-menu__link:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+.dropdown-menu__link:active {
+    background-color: rgba(0, 0, 0, .2);
+    transition: background-color .5s;
+}
+//Конец

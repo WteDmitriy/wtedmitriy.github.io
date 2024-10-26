@@ -1,0 +1,22 @@
+@import './base/variables';
+@import './base/fonts';
+@import './base/common';
+@import './base/mixins';
+
+
+@import './components/buttons';
+@import './components/card-price-new';
+@import './components/carousel-button';
+@import './components/format-card';
+@import './components/pagination';
+@import './components/pageup';
+
+@import './sections/card-slider-section';
+@import './sections/card-tabs-section';
+@import './sections/card-media';
+
+@import 'blocks/header';
+@import 'blocks/header-lenguage-ua';
+@import 'blocks/header-futer-media';
+@import 'blocks/futer';
+
